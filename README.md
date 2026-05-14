@@ -1,18 +1,23 @@
 # code-style-checker
 
-A lightweight CLI tool for detecting and auto-fixing basic code style issues in Python, JavaScript, PHP, and Markdown files.
+Lightweight developer tooling designed to detect and auto-fix common formatting inconsistencies across codebases.
+
+Built to simplify repetitive cleanup tasks and improve code consistency in small projects and automation workflows.
 
 ## Features
 
 - Detects **tab indentation** (`[TAB]`)
 - Detects **trailing spaces** (`[TRAILING SPACE]`)
 - Detects **mixed indentation** (spaces + tabs on the same line) (`[MIXED INDENT]`)
-- **Auto-fix mode** rewrites files in place
+- **Auto-fix mode** safely rewrites supported formatting issues in place
 - Scans a single file or an entire directory recursively
 
 ## Supported File Types
 
-`.py` · `.js` · `.php` · `.md`
+- Python (`.py`)
+- JavaScript (`.js`)
+- PHP (`.php`)
+- Markdown (`.md`)
 
 ## Installation
 
@@ -94,3 +99,12 @@ code-style-checker/
 ## License
 
 MIT
+
+## Notes
+
+This tool focuses on lightweight style consistency checks and is not intended to replace full linters or formatters such as:
+
+- flake8
+- black
+- prettier
+- PHP_CodeSniffer
